@@ -7,6 +7,7 @@ import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.transition.TransitionData;
+import flixel.addons.display.FlxBackdrop;
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup;
@@ -43,6 +44,8 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+	var bgcubes:FlxBackdrop;
+	var generated:Bool = false;
 
 	var curWacky:Array<String> = [];
 
@@ -53,7 +56,7 @@ class TitleState extends MusicBeatState
 		#if polymod
 		polymod.Polymod.init({modRoot: "mods", dirs: ['introMod']});
 		#end
-		
+		initialized = false;
 		#if sys
 		if (!sys.FileSystem.exists(Sys.getCwd() + "/assets/replays"))
 			sys.FileSystem.createDirectory(Sys.getCwd() + "/assets/replays");
@@ -152,12 +155,27 @@ class TitleState extends MusicBeatState
 
 		Conductor.changeBPM(102);
 		persistentUpdate = true;
-
+	
+		var realbg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('Blue1', 'ridzak'));
+		var linesbg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('Blue2', 'ridzak'));
+		bgcubes = new FlxBackdrop(Paths.image('BlueGrid', 'ridzak'), 0.3, 0.3, true, true);
+		
+		
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		// bg.antialiasing = true;
 		// bg.setGraphicSize(Std.int(bg.width * 0.6));
 		// bg.updateHitbox();
-		add(bg);
+		//add(bg);
+		realbg.scale.set(0.68513585508,0.60833333333);
+		realbg.updateHitbox();
+		realbg.screenCenter();
+		linesbg.scale.set(0.68513585508,0.60833333333);
+		linesbg.updateHitbox();
+		linesbg.screenCenter();
+
+		add(realbg);
+		add(linesbg);
+		add(bgcubes);
 
 		logoBl = new FlxSprite(-150, -100);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
@@ -226,6 +244,7 @@ class TitleState extends MusicBeatState
 			initialized = true;
 
 		// credGroup.add(credTextShit);
+		
 	}
 
 	function getIntroTextShit():Array<Array<String>>
@@ -268,6 +287,8 @@ class TitleState extends MusicBeatState
 		}
 		#end
 
+		
+
 		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
 
 		if (gamepad != null)
@@ -308,16 +329,8 @@ class TitleState extends MusicBeatState
 
 				http.onData = function (data:String) {
 				  
-				  	if (!MainMenuState.kadeEngineVer.contains(data.trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
-					{
-						trace('outdated lmao! ' + data.trim() + ' != ' + MainMenuState.kadeEngineVer);
-						OutdatedSubState.needVer = data;
-						FlxG.switchState(new OutdatedSubState());
-					}
-					else
-					{
-						FlxG.switchState(new MainMenuState());
-					}
+
+					FlxG.switchState(new MainMenuState());
 				}
 				
 				http.onError = function (error) {
@@ -337,6 +350,10 @@ class TitleState extends MusicBeatState
 		}
 
 		super.update(elapsed);
+		if (initialized) {
+			bgcubes.x -= 0.50;
+			bgcubes.y -= 0.20;
+		}
 	}
 
 	function createCoolText(textArray:Array<String>)
@@ -372,8 +389,8 @@ class TitleState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
-
-		logoBl.animation.play('bump');
+		if (initialized)
+			logoBl.animation.play('bump');
 		danceLeft = !danceLeft;
 
 		if (danceLeft)

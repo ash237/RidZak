@@ -148,7 +148,17 @@ class AnimationDebug extends FlxState
 		{
 			curAnim += 1;
 		}
-
+		if (FlxG.keys.justPressed.Z)
+		{
+			if (isDad)
+				dad.flipX = !dad.flipX;
+			else
+				bf.flipX = !bf.flipX;
+		}
+		if (FlxG.keys.justPressed.ENTER)
+		{
+			FlxG.switchState(new PlayState());
+		}
 		if (curAnim < 0)
 			curAnim = animList.length - 1;
 

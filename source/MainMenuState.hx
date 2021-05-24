@@ -10,7 +10,11 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxTimer;
+
 import flixel.util.FlxColor;
+import flixel.math.FlxMath;
 import io.newgrounds.NG;
 import lime.app.Application;
 
@@ -25,6 +29,7 @@ class MainMenuState extends MusicBeatState
 	var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
+	var menuItemsSelected:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
 	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options'];
@@ -44,8 +49,25 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 
+	var blueCorner:FlxSprite;
+	var redCorner:FlxSprite;
+	var bgcubes:FlxBackdrop;
+
+
+	var tweenArray:Array<FlxTween> = [];
+
 	override function create()
 	{
+		FlxG.camera.zoom = 5;
+		FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.3, {
+			ease: FlxEase.quadInOut,
+			startDelay: 0.2,
+			onComplete: function(twn:FlxTween)
+			{
+				FlxTween.tween(FlxG.camera, {zoom: 1}, 0.1, {
+				});
+			}
+		});
 		#if windows
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -58,21 +80,22 @@ class MainMenuState extends MusicBeatState
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(0).loadGraphic(Paths.image('back', 'ridzak'));
 		bg.scrollFactor.x = 0;
 		bg.scrollFactor.y = 0.15;
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();
 		bg.screenCenter();
+		bg.y -= 50;
 		bg.antialiasing = true;
 		add(bg);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menubgdesat', 'ridzak'));
 		magenta.scrollFactor.x = 0;
-		magenta.scrollFactor.y = 0.18;
+		magenta.scrollFactor.y = 0.15;
 		magenta.setGraphicSize(Std.int(magenta.width * 1.1));
 		magenta.updateHitbox();
 		magenta.screenCenter();
@@ -82,23 +105,64 @@ class MainMenuState extends MusicBeatState
 		add(magenta);
 		// magenta.scrollFactor.set();
 
+		bgcubes = new FlxBackdrop(Paths.image('mainGrid', 'ridzak'), 0.3, 0.3, true, true);
+		add(bgcubes);
+
+		var linesbg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('mainLines', 'ridzak'));
+		linesbg.scrollFactor.set();
+		linesbg.updateHitbox();
+		linesbg.screenCenter();
+		add(linesbg);
+		
+		
+
+		blueCorner = new FlxSprite(0).loadGraphic(Paths.image('blueCorner', 'ridzak'));
+		blueCorner.scrollFactor.x = 0;
+		blueCorner.scrollFactor.y = 0;
+		blueCorner.updateHitbox();
+		blueCorner.screenCenter();
+		blueCorner.visible = true;
+		blueCorner.antialiasing = true;	
+		add(blueCorner);
+
+		redCorner = new FlxSprite(0).loadGraphic(Paths.image('redCorner', 'ridzak'));
+		redCorner.scrollFactor.x = 0;
+		redCorner.scrollFactor.y = 0;
+		redCorner.updateHitbox();
+		redCorner.screenCenter();
+		redCorner.visible = true;
+		redCorner.antialiasing = true;	
+		add(redCorner);
+		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
-
-		var tex = Paths.getSparrowAtlas('FNF_main_menu_assets');
-
+		menuItemsSelected = new FlxTypedGroup<FlxSprite>();
+		add(menuItemsSelected);
+		
 		for (i in 0...optionShit.length)
 		{
-			var menuItem:FlxSprite = new FlxSprite(0, 60 + (i * 160));
+			/*var menuItem:FlxSprite = new FlxSprite(0, 60 + (i * 160));
 			menuItem.frames = tex;
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.play('idle');
+			menuItem.animation.play('idle');*/
+			var menuItem:FlxSprite = new FlxSprite(0, 10 + (i * 180)).loadGraphic(Paths.image('bars/Bar' + i, 'ridzak'));
 			menuItem.ID = i;
 			menuItem.screenCenter(X);
 			menuItems.add(menuItem);
+			//menuItem.scale.set(1, 0.65);
 			menuItem.scrollFactor.set();
+			menuItem.updateHitbox();
 			menuItem.antialiasing = true;
+			var menuItemSelected:FlxSprite = new FlxSprite(0, 10 + (i * 180)).loadGraphic(Paths.image('bars/BarSelected' + i, 'ridzak'));
+			menuItemSelected.ID = i;
+			menuItemSelected.screenCenter(X);
+			menuItemsSelected.add(menuItemSelected);
+			//menuItemSelected.scale.set(1, 0.65);
+			menuItemSelected.scrollFactor.set();
+			menuItemSelected.updateHitbox();
+			menuItemSelected.antialiasing = true;
+			menuItemSelected.visible = false;
 		}
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
@@ -164,9 +228,19 @@ class MainMenuState extends MusicBeatState
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
 
-					FlxFlicker.flicker(magenta, 1.1, 0.15, false);
+					//FlxFlicker.flicker(magenta, 1.1, 0.15, false);
 
-					menuItems.forEach(function(spr:FlxSprite)
+					/*new FlxTimer().start(1, function(tmr:FlxTimer)
+					{
+						FlxTween.tween(blueCorner, {x: blueCorner.x += 200, y: blueCorner.y -= 200}, 3, {
+							ease: FlxEase.quadOut,
+						});
+						FlxTween.tween(redCorner, {x: redCorner.x -= 200, y: redCorner.y += 200}, 3, {
+							ease: FlxEase.quadOut,
+						});
+					});*/
+
+					menuItemsSelected.forEach(function(spr:FlxSprite)
 					{
 						if (curSelected != spr.ID)
 						{
@@ -180,6 +254,7 @@ class MainMenuState extends MusicBeatState
 						}
 						else
 						{
+							
 							FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
 							{
 								var daChoice:String = optionShit[curSelected];
@@ -206,10 +281,12 @@ class MainMenuState extends MusicBeatState
 
 		super.update(elapsed);
 
-		menuItems.forEach(function(spr:FlxSprite)
+		menuItemsSelected.forEach(function(spr:FlxSprite)
 		{
-			spr.screenCenter(X);
+			spr.setPosition(menuItems.members[spr.ID].x, menuItems.members[spr.ID].y);
 		});
+		bgcubes.x -= 0.50;
+		bgcubes.y -= 0.20;
 	}
 
 	function changeItem(huh:Int = 0)
@@ -223,14 +300,32 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			spr.animation.play('idle');
+			if (spr.ID == curSelected) {
+				tweenArray[menuItems.members.indexOf(spr)] = FlxTween.tween(spr, {x: (FlxG.width / 2) + 80}, 0.2, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						if (spr.ID != curSelected)
+						{
+							spr.x = FlxG.width - 40;
+						}
+					} 
+				});
+				
+			} else {
+				if (tweenArray[menuItems.members.indexOf(spr)] != null) {
+					tweenArray[menuItems.members.indexOf(spr)].cancel();
+				}
+				spr.x = FlxG.width - 40;
+			}
+			/*spr.animation.play('idle');
 
 			if (spr.ID == curSelected)
 			{
 				spr.animation.play('selected');
 				camFollow.setPosition(spr.getGraphicMidpoint().x, spr.getGraphicMidpoint().y);
 			}
-
+			*/
 			spr.updateHitbox();
 		});
 	}

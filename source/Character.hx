@@ -495,6 +495,24 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'ridzak':
+				tex = Paths.getSparrowAtlas('ridzak', 'ridzak');
+				frames = tex;
+				animation.addByPrefix('idle', "Pico Idle Dance", 24);
+				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
+				animation.addByPrefix('singDOWN', 'Pico Down Note0', 24, false);
+				animation.addByPrefix('singLEFT', 'Pico Note Right0', 24, false);
+				animation.addByPrefix('singRIGHT', 'Pico NOTE LEFT0', 24, false);
+				addOffset('idle');
+				addOffset("singUP", 1, 7);
+				addOffset("singRIGHT", -120, -22);
+				addOffset("singLEFT", 29, -13);
+				addOffset("singDOWN", -30, -100);
+
+				playAnim('idle');
+
+				flipX = true;
+
 		}
 
 		dance();
