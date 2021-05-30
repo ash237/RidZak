@@ -71,6 +71,7 @@ class PlayState extends MusicBeatState
 	var halloweenLevel:Bool = false;
 
 	var songLength:Float = 0;
+	var funneCameraShit:Bool = false;
 	
 	#if windows
 	// Discord RPC variables
@@ -734,12 +735,12 @@ class PlayState extends MusicBeatState
 				camPos.x += 600;
 				dad.y += 300;
 			case 'ridzak':
-				camPos.x += 600;
-				camPos.y += 100;
+				camPos.y = 546.65;
+				camPos.x = 574.38;
 				dad.y += 300;
 			case 'ridzakego':
-				camPos.x += 600;
-				camPos.y += 100;
+				camPos.y = 546.65;
+				camPos.x = 574.38;	
 				dad.y += 300;
 			case 'parents-christmas':
 				dad.x -= 500;
@@ -904,7 +905,7 @@ class PlayState extends MusicBeatState
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		healthBar.createFilledBar(0xFFFF0000, 0xFF2ca4d2);
 		// healthBar
 		add(healthBar);
 
@@ -942,6 +943,27 @@ class PlayState extends MusicBeatState
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);
 
+		var uiBack = new FlxSprite(0, 0).loadGraphic(Paths.image('UI/ui', 'ridzak'));
+		uiBack.scrollFactor.set();
+		add(uiBack);
+
+		switch(storyDifficulty) {
+			case 0:
+				var diff = new FlxSprite(0, 0).loadGraphic(Paths.image('UI/easy', 'ridzak'));
+				diff.scrollFactor.set();
+				add(diff);
+				diff.cameras = [camHUD];
+			case 1:
+				var diff = new FlxSprite(0, 0).loadGraphic(Paths.image('UI/normal', 'ridzak'));
+				diff.scrollFactor.set();
+				add(diff);
+				diff.cameras = [camHUD];
+			case 2:
+				var diff = new FlxSprite(0, 0).loadGraphic(Paths.image('UI/hard', 'ridzak'));
+				diff.scrollFactor.set();
+				add(diff);
+				diff.cameras = [camHUD];
+		}
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
@@ -950,6 +972,7 @@ class PlayState extends MusicBeatState
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+		uiBack.cameras = [camHUD];
 		if (FlxG.save.data.songPosition)
 		{
 			songPosBG.cameras = [camHUD];
@@ -1035,6 +1058,7 @@ class PlayState extends MusicBeatState
 
 		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFff1b31);
 		red.scrollFactor.set();
+		red.cameras = [camHUD];
 
 		var senpaiEvil:FlxSprite = new FlxSprite();
 		senpaiEvil.frames = Paths.getSparrowAtlas('weeb/senpaiCrazy');
@@ -1055,8 +1079,16 @@ class PlayState extends MusicBeatState
 		}
 		if (SONG.song.toLowerCase() == 'ego')
 		{
-			add(red);
-			red.alpha = 0;
+			FlxG.camera.shake(0.001, 1, function()
+			{
+			});
+			new FlxTimer().start(1, function(tmr:FlxTimer)
+			{
+				funneCameraShit = true;
+				dad.playAnim('intro');
+				add(red);
+				red.alpha = 0;
+			});
 		}
 
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
@@ -1104,39 +1136,53 @@ class PlayState extends MusicBeatState
 								}
 							});
 						case 'ego':
-							red.alpha = 0.2;
-							FlxG.camera.shake(0.01, 0.2, function()
+							new FlxTimer().start(1.1, function(tmr:FlxTimer)
 							{
-								FlxG.camera.shake(0.03, 2.5, function() {
-									FlxG.camera.shake(0.01, 0.3, null, true);
-								}, true);
-							});
-							new FlxTimer().start(0.2, function(tmr:FlxTimer)
-							{
-								//if (red.alpha < 1) {
-									red.alpha += 0.2;
-								//	tmr.reset;
-								//}
-								//else {
-									new FlxTimer().start(0.4, function(tmr:FlxTimer) {
-										red.alpha = 0.7;
-									});
-									new FlxTimer().start(0.8, function(tmr:FlxTimer) {
-										red.alpha = 1;
-									});
-									new FlxTimer().start(1.8, function(deadTime:FlxTimer)
-									{
-										red.alpha = 0;
-										FlxG.camera.fade(FlxColor.RED, 0.5, true, function()
+								red.alpha = 0.1;
+								FlxG.camera.shake(0.01, 0.5, function()
+								{
+									FlxG.camera.shake(0.03, 2.5, function() {
+										FlxG.camera.shake(0.01, 0.3, null, true);
+									}, true);
+								});
+								camHUD.shake(0.01, 0.5, function()
+								{
+									camHUD.shake(0.03, 2.5, function() {
+										camHUD.shake(0.01, 0.3, null, true);
+									}, true);
+								});
+								new FlxTimer().start(0.5, function(tmr:FlxTimer)
+								{
+									//if (red.alpha < 1) {
+										red.alpha += 0.2;
+									//	tmr.reset;
+									//}
+									//else {
+										new FlxTimer().start(0.4, function(tmr:FlxTimer) {
+											red.alpha = 0.7;
+										});
+										new FlxTimer().start(0.8, function(tmr:FlxTimer) {
+											red.alpha = 1;
+											funneCameraShit = false;
+											FlxG.camera.zoom = defaultCamZoom;
+											dad.playAnim('idle', true, false, 5);
+											camFollow.y = 546.65;
+											camFollow.x = 574.38;
+										});
+										new FlxTimer().start(1.8, function(deadTime:FlxTimer)
 										{
-											add(dialogueBox);
-										}, true);
-									});
-								//}
-							});
-							new FlxTimer().start(1, function(deadTime:FlxTimer)
-							{
-								FlxG.camera.fade(FlxColor.RED, 3, true, null, true);
+											red.alpha = 0;
+											FlxG.camera.fade(FlxColor.RED, 0.5, true, function()
+											{
+												add(dialogueBox);
+											}, true);
+										});
+									//}
+								});
+								new FlxTimer().start(1, function(deadTime:FlxTimer)
+								{
+									FlxG.camera.fade(FlxColor.RED, 3, true, null, true);
+								});
 							});
 						default:
 							add(dialogueBox);
@@ -1752,7 +1798,12 @@ class PlayState extends MusicBeatState
 		}
 
 		super.update(elapsed);
-
+		if (funneCameraShit) {
+			//FlxG.camera.zoom = FlxMath.lerp(FlxG.camera.zoom, 1.2, 0.8);
+			FlxG.camera.zoom = FlxMath.lerp(1.2	, FlxG.camera.zoom, 0.95);
+			camFollow.x = FlxMath.lerp(camFollow.x, dad.getGraphicMidpoint().x, 0.8);
+			camFollow.y = FlxMath.lerp(camFollow.y, dad.getGraphicMidpoint().y - 50, 0.8);
+		}
 		if (!offsetTesting)
 		{
 			if (FlxG.save.data.accuracyDisplay)
@@ -3344,7 +3395,19 @@ class PlayState extends MusicBeatState
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.03;
 		}
-
+		if (curSong.toLowerCase() == 'ego' && curBeat == 186 && !dad.animation.curAnim.name.startsWith("scream")) {
+			dad.playAnim('scream');
+		}
+		var triggered = false;
+		if (curSong.toLowerCase() == 'ego' && curBeat == 202 && !triggered) {
+			triggered = true;
+			FlxG.camera.shake(0.02, 2.2, function()
+			{
+			});
+			camHUD.shake(0.02, 2.2, function()
+			{
+			});
+		}
 		if (camZooming && FlxG.camera.zoom < 1.35 && curBeat % 4 == 0)
 		{
 			FlxG.camera.zoom += 0.015;

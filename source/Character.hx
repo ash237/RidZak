@@ -531,7 +531,7 @@ class Character extends FlxSprite
                 addOffset("singLEFT", 55, -1);
                 addOffset("singDOWN", 108, -20);
 
-				playAnim('idle');
+				playAnim('intro');
 
 
 			case 'cybbr':
@@ -669,6 +669,11 @@ class Character extends FlxSprite
 						playAnim('danceRight');
 					else
 						playAnim('danceLeft');
+				case 'ridzakego':
+					if (!animation.curAnim.name.startsWith('scream'))
+					{
+						playAnim('idle');
+					}
 				default:
 					playAnim('idle');
 			}
