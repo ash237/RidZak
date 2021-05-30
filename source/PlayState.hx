@@ -626,6 +626,7 @@ class PlayState extends MusicBeatState
 			}
 			case 'orbit' | 'genesis' | 'golden':
 			{
+				defaultCamZoom = 0.8;
 				curStage = 'cyb';
 	
 				bgv2 = new FlxSprite( -409.35, -505);
@@ -1950,6 +1951,9 @@ class PlayState extends MusicBeatState
 					case 'senpai-angry':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
+					case 'cybbr':
+						camFollow.y = dad.getMidpoint().y + 100;
+						camFollow.x = dad.getMidpoint().x + 300;
 				}
 
 				switch (curStage)
@@ -1986,6 +1990,8 @@ class PlayState extends MusicBeatState
 					case 'ego':
 						camFollow.x = boyfriend.getMidpoint().x - 386.56;
 						camFollow.y = boyfriend.getMidpoint().y - 250.85;
+					case 'cyb':
+						camFollow.x = boyfriend.getMidpoint().x - 300.56;
 				}
 
 				if (SONG.song.toLowerCase() == 'tutorial')
