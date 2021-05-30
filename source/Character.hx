@@ -495,6 +495,7 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+
 			case 'ridzak':
 				tex = Paths.getSparrowAtlas('ridzak', 'ridzak');
 				frames = tex;
@@ -513,6 +514,23 @@ class Character extends FlxSprite
 
 				flipX = true;
 
+			case 'cybbr':
+				tex = Paths.getSparrowAtlas('Cybbr');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing note UP', 24);
+				animation.addByPrefix('singRIGHT', 'dad sing note right', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -13, 23);
+				addOffset("singRIGHT", 21, 6);
+				addOffset("singLEFT", 105, -17);
+				addOffset("singDOWN", -7, -89);
+	
+				setGraphicSize(Std.int(width * 1.3));
+				playAnim('idle');
 		}
 
 		dance();

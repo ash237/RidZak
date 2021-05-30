@@ -137,6 +137,7 @@ class PlayState extends MusicBeatState
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 
 	var halloweenBG:FlxSprite;
+	var bgv2:FlxSprite;
 	var isHalloween:Bool = false;
 
 	var phillyCityLights:FlxTypedGroup<FlxSprite>;
@@ -602,6 +603,7 @@ class PlayState extends MusicBeatState
 						*/
 			}
 			case 'ego':
+			{
 				defaultCamZoom = 0.66;
 				curStage = 'ego';
 				var bg:FlxSprite = new FlxSprite(-410, 0).loadGraphic(Paths.image('ego/back', 'ridzak'));
@@ -621,7 +623,19 @@ class PlayState extends MusicBeatState
 				bg2.antialiasing = true;
 				add(bg);
 				add(bg2);
-
+			}
+			case 'orbit' | 'genesis' | 'golden':
+			{
+				curStage = 'cyb';
+	
+				bgv2 = new FlxSprite( -409.35, -505);
+				bgv2.frames = Paths.getSparrowAtlas('cybbr2/stage', 'ridzak');
+				bgv2.animation.addByPrefix('idle', 'stage', 24);
+				bgv2.animation.play('idle');
+				bgv2.scrollFactor.set(1, 1);
+				bgv2.antialiasing = true;
+				add(bgv2);
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -713,6 +727,8 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+		    case 'cybbr':
+				camPos.set(dad.getGraphicMidpoint().x - 118.35, dad.getGraphicMidpoint().y - 305.7);
 		}
 
 
@@ -760,6 +776,14 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 130;
 				gf.x -= 48;
 				gf.y += 84;
+			case 'cyb':
+				boyfriend.x = 946.9;
+				boyfriend.y = 37.65;
+				gf.x = 404;
+				gf.y = -333.85;
+				dad.x = -86;
+				dad.y = -278;
+				gf.scrollFactor.set(1, 1);
 		}
 
 		add(gf);
