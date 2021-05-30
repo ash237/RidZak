@@ -513,6 +513,26 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
+			case 'ridzakego':
+				tex = Paths.getSparrowAtlas('RidZakEgo', 'ridzak');
+				frames = tex;
+				animation.addByPrefix('idle', "RidZakEgoIdle", 24, false);
+				animation.addByPrefix('singUP', 'RidZakEgoUp', 24, false);
+				animation.addByPrefix('singDOWN', 'RidZakEgoDown', 24, false);
+				animation.addByPrefix('singLEFT', 'RidZakEgoLeft', 24, false);
+				animation.addByPrefix('singRIGHT', 'RidZakEgoRight', 24, false);
+				animation.addByPrefix('scream', 'RidZak Scream', 24, false);
+				animation.addByPrefix('intro', 'RidZak Intro', 24, false);
+				addOffset('idle');
+				addOffset('scream', 44, 11);
+				addOffset('intro', 129);
+				addOffset("singUP", -2, -1);
+                addOffset("singRIGHT", -10, -6);
+                addOffset("singLEFT", 55, -1);
+                addOffset("singDOWN", 108, -20);
+
+				playAnim('idle');
+
 
 			case 'cybbr':
 				tex = Paths.getSparrowAtlas('Cybbr');

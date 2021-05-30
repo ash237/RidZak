@@ -624,6 +624,28 @@ class PlayState extends MusicBeatState
 				add(bg);
 				add(bg2);
 			}
+			case 'challenger' | 'ouch' | 'frenzy':
+			{
+				defaultCamZoom = 0.66;
+				curStage = 'ego';
+				var bg:FlxSprite = new FlxSprite(-410, 0).loadGraphic(Paths.image('normal/back', 'ridzak'));
+				var bg2:FlxSprite = new FlxSprite(-410, 0).loadGraphic(Paths.image('normal/front', 'ridzak'));
+
+				phillyCityLights = new FlxTypedGroup<FlxSprite>();
+				add(phillyCityLights);
+				for (i in 1...4)
+				{
+						var light:FlxSprite = new FlxSprite(-410).loadGraphic(Paths.image('normal/veryBack' + i, 'ridzak'));
+						light.visible = false;
+						light.updateHitbox();
+						light.antialiasing = true;
+						phillyCityLights.add(light);
+				}
+				bg.antialiasing = true;
+				bg2.antialiasing = true;
+				add(bg);
+				add(bg2);
+			}
 			case 'orbit' | 'genesis' | 'golden':
 			{
 				defaultCamZoom = 0.8;
@@ -713,6 +735,11 @@ class PlayState extends MusicBeatState
 				dad.y += 300;
 			case 'ridzak':
 				camPos.x += 600;
+				camPos.y += 100;
+				dad.y += 300;
+			case 'ridzakego':
+				camPos.x += 600;
+				camPos.y += 100;
 				dad.y += 300;
 			case 'parents-christmas':
 				dad.x -= 500;
@@ -1961,6 +1988,7 @@ class PlayState extends MusicBeatState
 					case 'ego':
 						camFollow.y = 546.65;
 						camFollow.x = 574.38;
+					
 				}
 				if (dad.curCharacter == 'mom')
 					vocals.volume = 1;

@@ -18,7 +18,8 @@ Senpai:senpai:6
 Roses:senpai:6
 Thorns:spirit:6
 Challenger:ridzak:7
-Ego:pico:7
+Ouch:ridzak:7
+Ego:ridzakego:7
 Orbit:cybbr:8
 Genesis:cybbr:8
 Golden:cybbr:8
