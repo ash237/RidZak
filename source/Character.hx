@@ -535,7 +535,7 @@ class Character extends FlxSprite
 
 
 			case 'cybbr':
-				tex = Paths.getSparrowAtlas('Cybbr');
+				tex = Paths.getSparrowAtlas('cybbr/Cybbr', 'ridzak');
 				frames = tex;
 				animation.addByPrefix('idle', 'Dad idle dance', 24);
 				animation.addByPrefix('singUP', 'Dad Sing note UP', 24);
@@ -549,6 +549,24 @@ class Character extends FlxSprite
 				addOffset("singLEFT", 145, -22);
 				addOffset("singDOWN", -7, -109);
 	
+				setGraphicSize(Std.int(width * 1.3));
+				playAnim('idle');
+
+			case 'cybbr-golden':
+				tex = Paths.getSparrowAtlas('cybbr/CybbrGold', 'ridzak');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing note UP', 24);
+				animation.addByPrefix('singRIGHT', 'dad sing note right', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", -17, 30);
+				addOffset("singRIGHT", 21, 6);
+				addOffset("singLEFT", 145, -22);
+				addOffset("singDOWN", -7, -109);
+		
 				setGraphicSize(Std.int(width * 1.3));
 				playAnim('idle');
 		}

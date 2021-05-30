@@ -652,12 +652,23 @@ class PlayState extends MusicBeatState
 				curStage = 'cyb';
 	
 				bgv2 = new FlxSprite( -409.35, -505);
-				bgv2.frames = Paths.getSparrowAtlas('cybbr2/stage', 'ridzak');
+				bgv2.frames = Paths.getSparrowAtlas('cybbr/stage', 'ridzak');
 				bgv2.animation.addByPrefix('idle', 'stage', 24);
 				bgv2.animation.play('idle');
 				bgv2.scrollFactor.set(1, 1);
 				bgv2.antialiasing = true;
 				add(bgv2);
+
+				phillyCityLights = new FlxTypedGroup<FlxSprite>();
+				add(phillyCityLights);
+				for (i in 1...4)
+				{
+						var light:FlxSprite = new FlxSprite(-409.35, -505).loadGraphic(Paths.image('cybbr/dance' + i, 'ridzak'));
+						light.visible = false;
+						light.updateHitbox();
+						light.antialiasing = true;
+						phillyCityLights.add(light);
+				}
 			}
 			default:
 			{
@@ -755,7 +766,7 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
-		    case 'cybbr':
+		    case 'cybbr' | 'cybbr-golden':
 				camPos.set(dad.getGraphicMidpoint().x - 118.35, dad.getGraphicMidpoint().y - 305.7);
 		}
 
@@ -1978,7 +1989,7 @@ class PlayState extends MusicBeatState
 					case 'senpai-angry':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
-					case 'cybbr':
+					case 'cybbr' | 'cybbr-golden':
 						camFollow.y = dad.getMidpoint().y + 100;
 						camFollow.x = dad.getMidpoint().x + 300;
 				}
@@ -3416,7 +3427,7 @@ class PlayState extends MusicBeatState
 					trainCooldown = FlxG.random.int(-4, 0);
 					trainStart();
 				}
-			case "ego":
+			case "ego" | "cyb":
 				if (curBeat % 4 == 0)
 				{
 
