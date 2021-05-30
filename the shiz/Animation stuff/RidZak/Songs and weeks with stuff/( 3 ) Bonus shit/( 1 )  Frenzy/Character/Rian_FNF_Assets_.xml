@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Rian_FNF_Assets_.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Rian DOWN0000" x="0" y="0" width="327" height="329" pivotX="-5.15" pivotY="-69.1" frameX="0" frameY="-2" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0001" x="0" y="0" width="327" height="329" frameX="0" frameY="-2" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0002" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0003" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0004" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0005" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0006" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0007" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0008" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0009" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian DOWN0010" x="327" y="0" width="327" height="330" frameX="0" frameY="0" frameWidth="327" frameHeight="331"/>
+	<SubTexture name="Rian IDLE0000" x="654" y="0" width="278" height="392" pivotX="157.85" pivotY="-1.2" frameX="-177" frameY="-14" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0001" x="654" y="0" width="278" height="392" frameX="-177" frameY="-14" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0002" x="932" y="0" width="298" height="384" frameX="-155" frameY="-19" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0003" x="932" y="0" width="298" height="384" frameX="-155" frameY="-19" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0004" x="1230" y="0" width="303" height="399" frameX="-149" frameY="-3" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0005" x="1230" y="0" width="303" height="399" frameX="-149" frameY="-3" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0006" x="1533" y="0" width="289" height="393" frameX="-167" frameY="-8" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0007" x="1533" y="0" width="289" height="393" frameX="-167" frameY="-8" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0008" x="0" y="399" width="461" height="402" frameX="0" frameY="0" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0009" x="0" y="399" width="461" height="402" frameX="0" frameY="0" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0010" x="0" y="399" width="461" height="402" frameX="0" frameY="0" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0011" x="0" y="399" width="461" height="402" frameX="0" frameY="0" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0012" x="461" y="399" width="303" height="399" frameX="-149" frameY="-3" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian IDLE0013" x="461" y="399" width="303" height="399" frameX="-149" frameY="-3" frameWidth="461" frameHeight="406"/>
+	<SubTexture name="Rian LEFT0000" x="764" y="399" width="355" height="260" pivotX="44.4" pivotY="-128.95" frameX="0" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0001" x="764" y="399" width="355" height="260" frameX="0" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0002" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0003" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0004" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0005" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0006" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0007" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0008" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0009" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0010" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0011" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0012" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0013" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0014" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0015" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian LEFT0016" x="1119" y="399" width="355" height="261" frameX="-2" frameY="0" frameWidth="357" frameHeight="261"/>
+	<SubTexture name="Rian RIGHT0000" x="1474" y="399" width="281" height="351" pivotX="-22.55" pivotY="-16.65" frameX="0" frameY="-3" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0001" x="1474" y="399" width="281" height="351" frameX="0" frameY="-3" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0002" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0003" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0004" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0005" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0006" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0007" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0008" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0009" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0010" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0011" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0012" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0013" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0014" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0015" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0016" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0017" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian RIGHT0018" x="1755" y="399" width="281" height="375" frameX="-3" frameY="0" frameWidth="284" frameHeight="375"/>
+	<SubTexture name="Rian UP0000" x="0" y="801" width="314" height="426" pivotX="5.35" pivotY="28.3" frameX="-8" frameY="0" frameWidth="342" frameHeight="427"/>
+	<SubTexture name="Rian UP0001" x="0" y="801" width="314" height="426" frameX="-8" frameY="0" frameWidth="342" frameHeight="427"/>
+	<SubTexture name="Rian UP0002" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0003" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0004" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0005" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0006" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0007" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0008" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0009" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0010" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0011" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0012" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian UP0013" x="314" y="801" width="342" height="427"/>
+	<SubTexture name="Rian intro pose0000" x="656" y="801" width="280" height="413" pivotX="63.5" pivotY="12.35" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0001" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0002" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0003" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0004" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0005" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0006" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0007" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0008" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0009" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0010" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0011" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0012" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0013" x="656" y="801" width="280" height="413" frameX="-198" frameY="0" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0014" x="936" y="801" width="352" height="403" frameX="-119" frameY="-8" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0015" x="1288" y="801" width="376" height="310" frameX="0" frameY="-150" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0016" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0017" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0018" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0019" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0020" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0021" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0022" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0023" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0024" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0025" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0026" x="1664" y="801" width="347" height="326" frameX="-19" frameY="-111" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0027" x="0" y="1228" width="308" height="340" frameX="-42" frameY="-96" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0028" x="308" y="1228" width="354" height="398" frameX="-26" frameY="-47" frameWidth="478" frameHeight="460"/>
+	<SubTexture name="Rian intro pose0029" x="662" y="1228" width="328" height="406" frameX="-97" frameY="-45" frameWidth="478" frameHeight="460"/>
+</TextureAtlas>

@@ -120,7 +120,9 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:FlxSprite;
-	var gfDance:FlxSprite;
+	var ridzak:FlxSprite;
+	var cybbr:FlxSprite;
+
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 
@@ -183,16 +185,26 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
+		logoBl.screenCenter(X);
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
-		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
-		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
-		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		gfDance.antialiasing = true;
-		add(gfDance);
+		ridzak = new FlxSprite(FlxG.width * 0.005, FlxG.height * 0.35);
+		ridzak.frames = Paths.getSparrowAtlas('RidZakMenu', 'ridzak');
+		ridzak.animation.addByPrefix('idle', 'Idle', 24, false);
+		ridzak.antialiasing = true;
+		ridzak.flipX = true;
+		ridzak.scale.set(0.8, 0.8);
+		
+		cybbr = new FlxSprite(FlxG.width * 0.65, FlxG.height * 0.25);
+		cybbr.frames = Paths.getSparrowAtlas('CybbrIdleMenu', 'ridzak');
+		cybbr.animation.addByPrefix('idle', 'Idle', 24, false);
+		cybbr.antialiasing = true;
+		cybbr.flipX = true;
+
 		add(logoBl);
+		add(ridzak);
+		add(cybbr);
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
@@ -393,10 +405,8 @@ class TitleState extends MusicBeatState
 			logoBl.animation.play('bump');
 		danceLeft = !danceLeft;
 
-		if (danceLeft)
-			gfDance.animation.play('danceRight');
-		else
-			gfDance.animation.play('danceLeft');
+		ridzak.animation.play('idle');
+		cybbr.animation.play('idle');
 
 		FlxG.log.add(curBeat);
 

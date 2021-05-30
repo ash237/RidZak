@@ -55,6 +55,8 @@ class MainMenuState extends MusicBeatState
 
 
 	var tweenArray:Array<FlxTween> = [];
+	var tweenArray2:Array<FlxTween> = [];
+
 
 	override function create()
 	{
@@ -146,7 +148,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.play('idle');*/
-			var menuItem:FlxSprite = new FlxSprite(0, 10 + (i * 180)).loadGraphic(Paths.image('bars/Bar' + i, 'ridzak'));
+			var menuItem:FlxSprite = new FlxSprite(0, (i * 170) - 20).loadGraphic(Paths.image('bars/Bar' + i, 'ridzak'));
 			menuItem.ID = i;
 			menuItem.screenCenter(X);
 			menuItems.add(menuItem);
@@ -154,7 +156,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.scrollFactor.set();
 			menuItem.updateHitbox();
 			menuItem.antialiasing = true;
-			var menuItemSelected:FlxSprite = new FlxSprite(0, 10 + (i * 180)).loadGraphic(Paths.image('bars/BarSelected' + i, 'ridzak'));
+			var menuItemSelected:FlxSprite = new FlxSprite(0, 0 + (i * 180)).loadGraphic(Paths.image('bars/BarSelected' + i, 'ridzak'));
 			menuItemSelected.ID = i;
 			menuItemSelected.screenCenter(X);
 			menuItemsSelected.add(menuItemSelected);
@@ -301,7 +303,7 @@ class MainMenuState extends MusicBeatState
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			if (spr.ID == curSelected) {
-				tweenArray[menuItems.members.indexOf(spr)] = FlxTween.tween(spr, {x: (FlxG.width / 2) + 80}, 0.2, {
+				tweenArray[menuItems.members.indexOf(spr)] = FlxTween.tween(spr, {x: (FlxG.width / 2) + 60}, 0.2, {
 					ease: FlxEase.quadOut,
 					onComplete: function(twn:FlxTween)
 					{
@@ -316,7 +318,20 @@ class MainMenuState extends MusicBeatState
 				if (tweenArray[menuItems.members.indexOf(spr)] != null) {
 					tweenArray[menuItems.members.indexOf(spr)].cancel();
 				}
-				spr.x = FlxG.width - 40;
+				if (tweenArray2[menuItems.members.indexOf(spr)] != null) {
+					tweenArray2[menuItems.members.indexOf(spr)].cancel();
+				}
+				tweenArray2[menuItems.members.indexOf(spr)] = FlxTween.tween(spr, {x: FlxG.width - 40}, 0.2, {
+					ease: FlxEase.quadOut,
+					onComplete: function(twn:FlxTween)
+					{
+						if (spr.ID != curSelected)
+						{
+							spr.x = FlxG.width - 40;
+						}
+					} 
+				});
+				//spr.x = FlxG.width - 40;
 			}
 			/*spr.animation.play('idle');
 

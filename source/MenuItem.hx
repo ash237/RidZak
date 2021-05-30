@@ -12,11 +12,12 @@ class MenuItem extends FlxSpriteGroup
 	public var targetY:Float = 0;
 	public var week:FlxSprite;
 	public var flashingInt:Int = 0;
+	public var big:Bool = false;
 
-	public function new(x:Float, y:Float, weekNum:Int = 0)
+	public function new(x:Float, y:Float, weekNum:Int = 0, char:String)
 	{
 		super(x, y);
-		week = new FlxSprite().loadGraphic(Paths.image('storymenu/week' + weekNum));
+		week = new FlxSprite().loadGraphic(Paths.image('storymenu/' + char));
 		add(week);
 	}
 
@@ -36,8 +37,19 @@ class MenuItem extends FlxSpriteGroup
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		y = FlxMath.lerp(y, (targetY * 120) + 480, 0.17 * (60 / FlxG.save.data.fpsCap));
-
+		if (targetY == -2)
+			targetY = 1;
+		if (targetY == 2)
+			targetY = -1;
+		//y = FlxMath.lerp(y, (targetY * 120) + 480, 0.17 * (60 / FlxG.save.data.fpsCap));
+		x = FlxMath.lerp(x, (targetY * 400) - 330, 0.1);
+		if (big) {
+			scale.x = FlxMath.lerp(scale.x, 0.6, 0.3);
+			scale.y = FlxMath.lerp(scale.y, 0.6, 0.3);
+		} else {
+			scale.x = FlxMath.lerp(scale.x, 0.5, 0.3);
+			scale.y = FlxMath.lerp(scale.y, 0.5, 0.3);
+		}
 		if (isFlashing)
 			flashingInt += 1;
 
