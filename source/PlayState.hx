@@ -300,6 +300,8 @@ class PlayState extends MusicBeatState
 				dialogue = [
 					":bf: fuck"	
 				];
+			case 'challenger':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('challenger/dialogue'));
 		}
 
 		switch(SONG.song.toLowerCase())
@@ -1081,6 +1083,8 @@ class PlayState extends MusicBeatState
 			{
 				case 'ego':
 					schoolIntro(doof);
+				case 'challenger':
+					schoolIntro(doof);
 				case 'orbit':
 					schoolIntro(doof);
 				default:
@@ -1099,6 +1103,8 @@ class PlayState extends MusicBeatState
 		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		black.scrollFactor.set();
 		add(black);
+		var specialblack:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+		specialblack.scrollFactor.set();
 
 		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFff1b31);
 		red.scrollFactor.set();
@@ -1121,18 +1127,21 @@ class PlayState extends MusicBeatState
 				add(red);
 			}
 		}
-		if (SONG.song.toLowerCase() == 'ego')
-		{
-			FlxG.camera.shake(0.001, 1, function()
-			{
-			});
-			new FlxTimer().start(1, function(tmr:FlxTimer)
-			{
-				funneCameraShit = true;
-				dad.playAnim('intro');
-				add(red);
-				red.alpha = 0;
-			});
+		switch (SONG.song.toLowerCase()) {
+			case 'challenger':
+				add(specialblack);
+				//camHUD.visible = false;
+			case 'ego':
+				FlxG.camera.shake(0.001, 1, function()
+				{
+				});
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					funneCameraShit = true;
+					dad.playAnim('intro');
+					add(red);
+					red.alpha = 0;
+				});
 		}
 
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
@@ -1151,6 +1160,9 @@ class PlayState extends MusicBeatState
 
 					switch (SONG.song.toLowerCase())
 					{
+						case 'challenger':
+							add(dialogueBox);
+							remove(specialblack);
 						case 'thorns':
 							add(senpaiEvil);
 							senpaiEvil.alpha = 0;
@@ -1246,7 +1258,7 @@ class PlayState extends MusicBeatState
 	function startCountdown():Void
 	{
 		inCutscene = false;
-
+		camHUD.visible = true;
 		generateStaticArrows(0);
 		generateStaticArrows(1);
 
