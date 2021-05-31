@@ -2,128 +2,307 @@
 <TextureAtlas imagePath="CybbrGold.png">
 	<!-- Created with Adobe Animate version 20.5.0.29329 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Dad Sing Note DOWN0000" x="0" y="0" width="384" height="433" frameX="-13" frameY="-9" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0001" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0002" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0003" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0004" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0005" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0006" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0007" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0008" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0009" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0010" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0011" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0012" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0013" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0014" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note DOWN0015" x="384" y="0" width="409" height="441" frameX="0" frameY="0" frameWidth="409" frameHeight="442"/>
-	<SubTexture name="Dad Sing Note LEFT0000" x="793" y="0" width="512" height="513" frameX="0" frameY="0" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0001" x="793" y="0" width="512" height="513" frameX="0" frameY="0" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0002" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0003" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0004" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0005" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0006" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0007" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0008" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0009" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0010" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0011" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0012" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0013" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0014" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0015" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0016" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0017" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing Note LEFT0018" x="1305" y="0" width="506" height="503" frameX="-29" frameY="-10" frameWidth="535" frameHeight="513"/>
-	<SubTexture name="Dad Sing note UP0000" x="1811" y="0" width="371" height="527" frameX="0" frameY="-26" frameWidth="371" frameHeight="559"/>
-	<SubTexture name="Dad Sing note UP0001" x="1811" y="0" width="371" height="527" frameX="0" frameY="-26" frameWidth="371" frameHeight="559"/>
-	<SubTexture name="Dad Sing note UP0002" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0003" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0004" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0005" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0006" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0007" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0008" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0009" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0010" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0011" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0012" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0013" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0014" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0015" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0016" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0017" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0018" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0019" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0020" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0021" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0022" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0023" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0024" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0025" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0026" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0027" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0028" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0029" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0030" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0031" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0032" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0033" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0034" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0035" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0036" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0037" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0038" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0039" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0040" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0041" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0042" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0043" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0044" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0045" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0046" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0047" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0048" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0049" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0050" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0051" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0052" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0053" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0054" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0055" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0056" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0057" x="2182" y="0" width="371" height="559"/>
-	<SubTexture name="Dad Sing note UP0058" x="2553" y="0" width="210" height="176" frameX="-85" frameY="-160" frameWidth="371" frameHeight="559"/>
-	<SubTexture name="Dad Sing note UP0059" x="2553" y="0" width="210" height="176" frameX="-85" frameY="-160" frameWidth="371" frameHeight="559"/>
-	<SubTexture name="Dad idle dance0000" x="2763" y="0" width="371" height="527" frameX="-14" frameY="-3" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0001" x="3134" y="0" width="375" height="522" frameX="-12" frameY="-8" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0002" x="3134" y="0" width="375" height="522" frameX="-12" frameY="-8" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0003" x="3509" y="0" width="387" height="513" frameX="-6" frameY="-17" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0004" x="3509" y="0" width="387" height="513" frameX="-6" frameY="-17" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0005" x="0" y="559" width="399" height="513" frameX="0" frameY="-17" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0006" x="0" y="559" width="399" height="513" frameX="0" frameY="-17" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0007" x="399" y="559" width="387" height="523" frameX="-6" frameY="-7" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0008" x="399" y="559" width="387" height="523" frameX="-6" frameY="-7" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0009" x="786" y="559" width="383" height="527" frameX="-8" frameY="-3" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0010" x="786" y="559" width="383" height="527" frameX="-8" frameY="-3" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0011" x="1169" y="559" width="379" height="530" frameX="-10" frameY="0" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="Dad idle dance0012" x="1169" y="559" width="379" height="530" frameX="-10" frameY="0" frameWidth="399" frameHeight="530"/>
-	<SubTexture name="dad sing note right0000" x="1548" y="559" width="368" height="525" frameX="-17" frameY="-11" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0001" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0002" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0003" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0004" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0005" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0006" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0007" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0008" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0009" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0010" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0011" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0012" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0013" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0014" x="1916" y="559" width="364" height="536" frameX="0" frameY="0" frameWidth="883" frameHeight="999"/>
-	<SubTexture name="dad sing note right0015" x="2280" y="559" width="365" height="537" frameX="-518" frameY="-462" frameWidth="883" frameHeight="999"/>
+	<SubTexture name="CybbrGoldDown0000" x="0" y="0" width="568" height="683" frameX="-4" frameY="0" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0001" x="0" y="0" width="568" height="683" frameX="-4" frameY="0" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0002" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0003" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0004" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0005" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0006" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0007" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0008" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0009" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0010" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0011" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0012" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0013" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0014" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldDown0015" x="568" y="0" width="569" height="630" frameX="0" frameY="-41" frameWidth="572" frameHeight="683"/>
+	<SubTexture name="CybbrGoldLeft0000" x="1137" y="0" width="514" height="709" frameX="-17" frameY="-4" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0001" x="1137" y="0" width="514" height="709" frameX="-17" frameY="-4" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0002" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0003" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0004" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0005" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0006" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0007" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0008" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0009" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0010" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0011" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0012" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0013" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0014" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0015" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0016" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0017" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0018" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0019" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0020" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0021" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0022" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0023" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0024" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0025" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0026" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0027" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0028" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0029" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0030" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0031" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0032" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0033" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldLeft0034" x="1651" y="0" width="509" height="713" frameX="0" frameY="0" frameWidth="531" frameHeight="713"/>
+	<SubTexture name="CybbrGoldRight0000" x="2160" y="0" width="689" height="716" frameX="0" frameY="0" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0001" x="2160" y="0" width="689" height="716" frameX="0" frameY="0" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0002" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0003" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0004" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0005" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0006" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0007" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0008" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0009" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0010" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0011" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0012" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0013" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0014" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0015" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0016" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0017" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldRight0018" x="2849" y="0" width="706" height="702" frameX="-21" frameY="-15" frameWidth="727" frameHeight="717"/>
+	<SubTexture name="CybbrGoldUp0000" x="3555" y="0" width="514" height="719" frameX="0" frameY="-20" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0001" x="3555" y="0" width="514" height="719" frameX="0" frameY="-20" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0002" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0003" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0004" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0005" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0006" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0007" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0008" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0009" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0010" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0011" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0012" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0013" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrGoldUp0014" x="0" y="719" width="514" height="734" frameX="0" frameY="0" frameWidth="514" frameHeight="739"/>
+	<SubTexture name="CybbrIdle0000" x="514" y="719" width="515" height="719" frameX="0" frameY="-16" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0001" x="514" y="719" width="515" height="719" frameX="0" frameY="-16" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0002" x="1029" y="719" width="515" height="734" frameX="0" frameY="-1" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0003" x="1029" y="719" width="515" height="734" frameX="0" frameY="-1" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0004" x="1544" y="719" width="515" height="736"/>
+	<SubTexture name="CybbrIdle0005" x="1544" y="719" width="515" height="736"/>
+	<SubTexture name="CybbrIdle0006" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0007" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0008" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0009" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0010" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0011" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0012" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0013" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0014" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0015" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="CybbrIdle0016" x="2059" y="719" width="515" height="733" frameX="0" frameY="0" frameWidth="515" frameHeight="736"/>
+	<SubTexture name="GoldIntro0000" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0001" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0002" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0003" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0004" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0005" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0006" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0007" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0008" x="2574" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0009" x="3089" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0010" x="3089" y="719" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0011" x="0" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0012" x="0" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0013" x="515" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0014" x="515" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0015" x="1030" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0016" x="1545" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0017" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0018" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0019" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0020" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0021" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0022" x="2060" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0023" x="2575" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0024" x="2575" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0025" x="2575" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0026" x="3090" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0027" x="3090" y="1455" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0028" x="0" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0029" x="0" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0030" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0031" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0032" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0033" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0034" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0035" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0036" x="1545" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0037" x="1545" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0038" x="1545" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0039" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0040" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0041" x="515" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0042" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0043" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0044" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0045" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0046" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0047" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0048" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0049" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0050" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0051" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0052" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0053" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0054" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0055" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0056" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0057" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0058" x="1030" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0059" x="2060" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0060" x="2575" y="2183" width="515" height="918" frameX="0" frameY="0" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0061" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0062" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0063" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0064" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0065" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0066" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0067" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0068" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0069" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0070" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0071" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0072" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0073" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0074" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0075" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0076" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0077" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0078" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0079" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0080" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0081" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0082" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0083" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0084" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0085" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0086" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0087" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0088" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0089" x="3090" y="2183" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0090" x="0" y="3101" width="515" height="916" frameX="0" frameY="-2" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0091" x="515" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0092" x="1030" y="3101" width="515" height="690" frameX="-1" frameY="-221" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0093" x="1545" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0094" x="2060" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0095" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0096" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0097" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0098" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0099" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0100" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0101" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0102" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0103" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0104" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0105" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0106" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0107" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0108" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0109" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0110" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0111" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0112" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0113" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0114" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0115" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0116" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0117" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0118" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0119" x="2575" y="3101" width="515" height="728" frameX="0" frameY="-190" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0120" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0121" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0122" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0123" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0124" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0125" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0126" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0127" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0128" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0129" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0130" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0131" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0132" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0133" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0134" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0135" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0136" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0137" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0138" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0139" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0140" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0141" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0142" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0143" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0144" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0145" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0146" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0147" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0148" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0149" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0150" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0151" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0152" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0153" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0154" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0155" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0156" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0157" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0158" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0159" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0160" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0161" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0162" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0163" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0164" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0165" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0166" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0167" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0168" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0169" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0170" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0171" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0172" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0173" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0174" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0175" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0176" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0177" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0178" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0179" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0180" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0181" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0182" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0183" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0184" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0185" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0186" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0187" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0188" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0189" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0190" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0191" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0192" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0193" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0194" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0195" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0196" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0197" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0198" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0199" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
+	<SubTexture name="GoldIntro0200" x="3090" y="3101" width="0" height="0" frameX="20" frameY="-593" frameWidth="516" frameHeight="918"/>
 </TextureAtlas>

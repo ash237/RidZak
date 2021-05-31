@@ -537,37 +537,36 @@ class Character extends FlxSprite
 			case 'cybbr':
 				tex = Paths.getSparrowAtlas('cybbr/Cybbr', 'ridzak');
 				frames = tex;
-				animation.addByPrefix('idle', 'Dad idle dance', 24);
-				animation.addByPrefix('singUP', 'Dad Sing note UP', 24);
-				animation.addByPrefix('singRIGHT', 'dad sing note right', 24);
-				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
-				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('idle', 'CybbrIdle', 24);
+				animation.addByPrefix('singUP', 'CybbrUp', 24);
+				animation.addByPrefix('singRIGHT', 'CybbrRight', 24);
+				animation.addByPrefix('singDOWN', 'CybbrDown', 24);
+				animation.addByPrefix('singLEFT', 'CybbrLeft', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -17, 30);
-				addOffset("singRIGHT", 21, 6);
-				addOffset("singLEFT", 145, -22);
-				addOffset("singDOWN", -7, -109);
+				addOffset("singUP", 2, 2);
+				addOffset("singRIGHT", 154, -45);
+				addOffset("singLEFT", 32, -18);
+				addOffset("singDOWN", 35, -45);
 	
-				setGraphicSize(Std.int(width * 1.3));
 				playAnim('idle');
 
 			case 'cybbr-golden':
 				tex = Paths.getSparrowAtlas('cybbr/CybbrGold', 'ridzak');
 				frames = tex;
-				animation.addByPrefix('idle', 'Dad idle dance', 24);
-				animation.addByPrefix('singUP', 'Dad Sing note UP', 24);
-				animation.addByPrefix('singRIGHT', 'dad sing note right', 24);
-				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
-				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('idle', 'CybbrIdle', 24);
+				animation.addByPrefix('singUP', 'CybbrGoldUp', 24);
+				animation.addByPrefix('singRIGHT', 'CybbrGoldRight', 24);
+				animation.addByPrefix('singDOWN', 'CybbrGoldDown', 24);
+				animation.addByPrefix('singLEFT', 'CybbrGoldLeft', 24);
+				animation.addByPrefix('intro', 'GoldIntro', 24, false);
 	
 				addOffset('idle');
-				addOffset("singUP", -17, 30);
-				addOffset("singRIGHT", 21, 6);
-				addOffset("singLEFT", 145, -22);
-				addOffset("singDOWN", -7, -109);
+				addOffset("singUP", 2, 2);
+				addOffset("singRIGHT", 154, -45);
+				addOffset("singLEFT", 32, -18);
+				addOffset("singDOWN", 35, -45);
 		
-				setGraphicSize(Std.int(width * 1.3));
 				playAnim('idle');
 		}
 

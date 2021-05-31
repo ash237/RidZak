@@ -122,6 +122,7 @@ class PlayState extends MusicBeatState
 	private var songPositionBar:Float = 0;
 	
 	private var generatedMusic:Bool = false;
+	private var bgTEST:Bool = false;
 	private var startingSong:Bool = false;
 
 	private var iconP1:HealthIcon;
@@ -290,6 +291,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'orbit':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('orbit/orbitDialogue'));
 			case 'ego':
 				dialogue = [
 					":bf: fuck"	
@@ -652,19 +655,24 @@ class PlayState extends MusicBeatState
 				defaultCamZoom = 0.8;
 				curStage = 'cyb';
 	
-				bgv2 = new FlxSprite( -409.35, -505);
+				bgv2 = new FlxSprite( -512.45, -575.7);
 				bgv2.frames = Paths.getSparrowAtlas('cybbr/stage', 'ridzak');
 				bgv2.animation.addByPrefix('idle', 'stage', 24);
 				bgv2.animation.play('idle');
-				bgv2.scrollFactor.set(1, 1);
+				bgv2.scrollFactor.set(0.8, 0.8);
 				bgv2.antialiasing = true;
+				add(bgv2);
+
+				var bgv2:FlxSprite = new FlxSprite(-449, -476).loadGraphic(Paths.image('cybbr/danceOff', 'ridzak'));
+				bgv2.antialiasing = true;
+				bgv2.active = false;
 				add(bgv2);
 
 				phillyCityLights = new FlxTypedGroup<FlxSprite>();
 				add(phillyCityLights);
 				for (i in 1...4)
 				{
-						var light:FlxSprite = new FlxSprite(-409.35, -505).loadGraphic(Paths.image('cybbr/dance' + i, 'ridzak'));
+						var light:FlxSprite = new FlxSprite(-449, -476).loadGraphic(Paths.image('cybbr/dance' + i, 'ridzak'));
 						light.visible = false;
 						light.updateHitbox();
 						light.antialiasing = true;
@@ -817,13 +825,17 @@ class PlayState extends MusicBeatState
 				gf.x -= 48;
 				gf.y += 84;
 			case 'cyb':
-				boyfriend.x = 946.9;
-				boyfriend.y = 37.65;
-				gf.x = 404;
-				gf.y = -333.85;
-				dad.x = -86;
-				dad.y = -278;
+				boyfriend.x = 946.3;
+				boyfriend.y = 31.95;
+				gf.x = 371.2;
+				gf.y = -331.2;
+				dad.x = -201.15;
+				dad.y = -381.8;
 				gf.scrollFactor.set(1, 1);
+				add(gf);
+				add(boyfriend);
+				add(dad);
+				bgTEST = true;
 		}
 
 		add(gf);
@@ -1040,6 +1052,12 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'ego':
 					schoolIntro(doof);
+				case 'orbit':
+					schoolIntro(doof);
+				case 'genesis':
+					schoolIntro(doof);
+				case 'golden':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1049,6 +1067,8 @@ class PlayState extends MusicBeatState
 			switch (curSong.toLowerCase())
 			{
 				case 'ego':
+					schoolIntro(doof);
+				case 'orbit':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -1765,6 +1785,19 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		if(bgTEST)
+			{
+				phillyCityLights = new FlxTypedGroup<FlxSprite>();
+				add(phillyCityLights);
+				for (i in 1...4)
+				{
+						var light:FlxSprite = new FlxSprite(-449, -476).loadGraphic(Paths.image('cybbr/light' + i, 'ridzak'));
+						light.visible = false;
+						light.updateHitbox();
+						light.antialiasing = true;
+						phillyCityLights.add(light);
+				}
+			}
 		#if !debug
 		perfectMode = false;
 		#end
