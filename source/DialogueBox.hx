@@ -121,6 +121,13 @@ class DialogueBox extends FlxSpriteGroup
 				box.y += 320;
 				box.animation.addByPrefix('normalOpen', 'speech bubble normal', 24, false);
 				box.animation.addByIndices('normal', 'speech bubble normal', [11], "", 24);
+			case 'orbit' | 'genesis' | 'golden':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('bubble', 'ridzak');
+				box.x -= 26;
+				box.y -= 61.55;
+				box.animation.addByPrefix('normalOpen', 'text', 24, false);
+				box.animation.addByIndices('normal', 'text', [11], "", 24);
 			
 		}
 

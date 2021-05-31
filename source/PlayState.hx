@@ -296,6 +296,10 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
 			case 'orbit':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('orbit/orbitDialogue'));
+			case 'genesis':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('genesis/genesisDialogue'));
+			case 'golden':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('golden/goldenDialogue'));
 			case 'ego':
 				dialogue = [
 					":bf: fuck"	
@@ -734,6 +738,8 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf-pixel';
 			case 'schoolEvil':
 				gfVersion = 'gf-pixel';
+			case 'cyb':
+				gfVersion = 'gf-cyb';
 		}
 
 		if (curStage == 'limo')
@@ -1086,6 +1092,10 @@ class PlayState extends MusicBeatState
 				case 'challenger':
 					schoolIntro(doof);
 				case 'orbit':
+					schoolIntro(doof);
+				case 'genesis':
+					schoolIntro(doof);
+				case 'golden':
 					schoolIntro(doof);
 				default:
 					startCountdown();
