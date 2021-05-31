@@ -88,6 +88,7 @@ class PlayState extends MusicBeatState
 	private var boyfriend:Boyfriend;
 
 	private var lightOrder:Int = 0;
+	private var lightOrder2:Int = 0;
 
 	private var notes:FlxTypedGroup<Note>;
 	private var unspawnNotes:Array<Note> = [];
@@ -143,6 +144,8 @@ class PlayState extends MusicBeatState
 	var isHalloween:Bool = false;
 
 	var phillyCityLights:FlxTypedGroup<FlxSprite>;
+	var cybLights:FlxTypedGroup<FlxSprite>;
+
 	var phillyTrain:FlxSprite;
 	var trainSound:FlxSound;
 
@@ -677,6 +680,16 @@ class PlayState extends MusicBeatState
 						light.updateHitbox();
 						light.antialiasing = true;
 						phillyCityLights.add(light);
+				}
+				cybLights = new FlxTypedGroup<FlxSprite>();
+				add(cybLights);
+				for (i in 1...3)
+				{
+					var light:FlxSprite = new FlxSprite(-449, -476).loadGraphic(Paths.image('cybbr/light' + i, 'ridzak'));
+					light.visible = false;
+					light.updateHitbox();
+					light.antialiasing = true;
+					cybLights.add(light);
 				}
 			}
 			default:
@@ -1785,7 +1798,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		if(bgTEST)
+		/*if(bgTEST)
 			{
 				phillyCityLights = new FlxTypedGroup<FlxSprite>();
 				add(phillyCityLights);
@@ -1797,7 +1810,7 @@ class PlayState extends MusicBeatState
 						light.antialiasing = true;
 						phillyCityLights.add(light);
 				}
-			}
+			}*/
 		#if !debug
 		perfectMode = false;
 		#end
@@ -3523,7 +3536,7 @@ class PlayState extends MusicBeatState
 					trainCooldown = FlxG.random.int(-4, 0);
 					trainStart();
 				}
-			case "ego" | "cyb":
+			case "ego":
 				if (curBeat % 4 == 0)
 				{
 
@@ -3539,6 +3552,41 @@ class PlayState extends MusicBeatState
 					lightOrder++;
 					if (lightOrder > 2)
 						lightOrder = 0;
+					
+				}
+			case "cyb":
+				if (curBeat % 4 == 0)
+				{
+
+					phillyCityLights.forEach(function(light:FlxSprite)
+					{
+						light.visible = false;
+					});
+
+					curLight = lightOrder;
+
+					phillyCityLights.members[curLight].visible = true;
+					// phillyCityLights.members[curLight].alpha = 1;
+					lightOrder++;
+					if (lightOrder > 2)
+						lightOrder = 0;
+					
+				}
+				if (curBeat % 4 == 0)
+				{
+
+					cybLights.forEach(function(light:FlxSprite)
+					{
+						light.visible = false;
+					});
+
+					curLight = lightOrder2;
+
+					cybLights.members[curLight].visible = true;
+					// phillyCityLights.members[curLight].alpha = 1;
+					lightOrder2++;
+					if (lightOrder2 > 1)
+						lightOrder2 = 0;
 					
 				}
 		}

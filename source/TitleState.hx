@@ -203,8 +203,8 @@ class TitleState extends MusicBeatState
 		cybbr.flipX = true;
 
 		add(logoBl);
-		add(ridzak);
-		add(cybbr);
+		//add(ridzak);
+		//add(cybbr);
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');

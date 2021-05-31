@@ -533,7 +533,6 @@ class Character extends FlxSprite
 
 				playAnim('intro');
 
-
 			case 'cybbr':
 				tex = Paths.getSparrowAtlas('cybbr/Cybbr', 'ridzak');
 				frames = tex;
@@ -544,10 +543,10 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'CybbrLeft', 24);
 
 				addOffset('idle');
-				addOffset("singUP", 2, 2);
-				addOffset("singRIGHT", 154, -45);
-				addOffset("singLEFT", 32, -18);
-				addOffset("singDOWN", 35, -45);
+				addOffset("singUP", -3, -3);
+				addOffset("singRIGHT", 152, -18);
+				addOffset("singLEFT", 18, -17);
+				addOffset("singDOWN", 41, -45);
 	
 				playAnim('idle');
 
@@ -562,10 +561,10 @@ class Character extends FlxSprite
 				animation.addByPrefix('intro', 'GoldIntro', 24, false);
 	
 				addOffset('idle');
-				addOffset("singUP", 2, 2);
-				addOffset("singRIGHT", 154, -45);
-				addOffset("singLEFT", 32, -18);
-				addOffset("singDOWN", 35, -45);
+				addOffset("singUP", -3, -3);
+				addOffset("singRIGHT", 152, -18);
+				addOffset("singLEFT", 18, -17);
+				addOffset("singDOWN", 41, -45);
 		
 				playAnim('idle');
 		}
