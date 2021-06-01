@@ -41,6 +41,8 @@ class HealthIcon extends FlxSprite
 		animation.add('ridzakego', [8, 9], 0, false, isPlayer);
 		animation.add('cybbr', [10, 11], 0, false, isPlayer);
 		animation.add('cybbr-golden', [10, 11], 0, false, isPlayer);
+		animation.add('miyno', [25, 24], 0, false, isPlayer);
+		animation.add('rian', [14, 15], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}

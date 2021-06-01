@@ -19,3 +19,5 @@ ridzak
 cybbr
 cybbr-golden
 gf-cyb
+miyno
+rian

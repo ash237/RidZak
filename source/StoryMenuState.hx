@@ -27,9 +27,9 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Tutorial'],
+		['Challenger', 'Ouch', 'Ego', 'Vibe'],
 		['Orbit', 'Genesis', 'Golden'],
-		['Spookeez', 'South', "Monster"]
+		['Frenzy', 'Vast']
 	];
 	var curDifficulty:Int = 1;
 
@@ -266,12 +266,12 @@ class StoryMenuState extends MusicBeatState
 		{
 			if (!selectedWeek)
 			{
-				if (controls.UP_P)
+				if (controls.RIGHT_P)
 				{
 					changeWeek(-1);
 				}
 
-				if (controls.DOWN_P)
+				if (controls.LEFT_P)
 				{
 					changeWeek(1);
 				}
@@ -286,9 +286,9 @@ class StoryMenuState extends MusicBeatState
 				else
 					leftArrow.animation.play('idle');
 
-				if (controls.RIGHT_P)
+				if (controls.UP_P)
 					changeDifficulty(1);
-				if (controls.LEFT_P)
+				if (controls.DOWN_P)
 					changeDifficulty(-1);
 			}
 

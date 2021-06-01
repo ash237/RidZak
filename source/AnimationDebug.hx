@@ -41,7 +41,7 @@ class AnimationDebug extends FlxState
 
 		if (daAnim == 'bf')
 			isDad = false;
-
+		
 		if (isDad)
 		{
 			dad = new Character(0, 0, daAnim);
@@ -62,7 +62,8 @@ class AnimationDebug extends FlxState
 			char = bf;
 			bf.flipX = false;
 		}
-
+		if (daAnim == 'rian')
+			dad.scale.set(1.4, 1.4);
 		dumbTexts = new FlxTypedGroup<FlxText>();
 		add(dumbTexts);
 

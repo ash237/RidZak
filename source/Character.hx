@@ -17,6 +17,8 @@ class Character extends FlxSprite
 
 	public var holdTimer:Float = 0;
 
+	var FuckYouImlazy:Bool = false;
+	var FuckYouImlazy2:Bool = false;
 	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -532,7 +534,7 @@ class Character extends FlxSprite
 			case 'ridzak':
 				tex = Paths.getSparrowAtlas('ridzak', 'ridzak');
 				frames = tex;
-				animation.addByPrefix('idle', "Pico Idle Dance", 24);
+				animation.addByPrefix('idle', "Pico Idle Dance", 24, false);
 				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
 				animation.addByPrefix('singDOWN', 'Pico Down Note0', 24, false);
 				animation.addByPrefix('singLEFT', 'Pico Note Right0', 24, false);
@@ -569,24 +571,24 @@ class Character extends FlxSprite
 			case 'cybbr':
 				tex = Paths.getSparrowAtlas('cybbr/Cybbr', 'ridzak');
 				frames = tex;
-				animation.addByPrefix('idle', 'CybbrIdle', 24);
+				animation.addByPrefix('idle', 'CybbrIdle', 24, false);
 				animation.addByPrefix('singUP', 'CybbrUp', 24);
 				animation.addByPrefix('singRIGHT', 'CybbrRight', 24);
 				animation.addByPrefix('singDOWN', 'CybbrDown', 24);
 				animation.addByPrefix('singLEFT', 'CybbrLeft', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -3, -3);
-				addOffset("singRIGHT", 152, -18);
-				addOffset("singLEFT", 18, -17);
-				addOffset("singDOWN", 41, -45);
+				addOffset("singUP", 1, 2);
+				addOffset("singRIGHT", 137, -20);
+				addOffset("singLEFT", 16, -22);
+				addOffset("singDOWN", 13, -51);
 	
 				playAnim('idle');
 
 			case 'cybbr-golden':
 				tex = Paths.getSparrowAtlas('cybbr/CybbrGold', 'ridzak');
 				frames = tex;
-				animation.addByPrefix('idle', 'CybbrIdle', 24);
+				animation.addByPrefix('idle', 'CybbrIdle', 24, false);
 				animation.addByPrefix('singUP', 'CybbrGoldUp', 24);
 				animation.addByPrefix('singRIGHT', 'CybbrGoldRight', 24);
 				animation.addByPrefix('singDOWN', 'CybbrGoldDown', 24);
@@ -594,12 +596,48 @@ class Character extends FlxSprite
 				animation.addByPrefix('intro', 'GoldIntro', 24, false);
 	
 				addOffset('idle');
-				addOffset("singUP", -3, -3);
-				addOffset("singRIGHT", 152, -18);
-				addOffset("singLEFT", 18, -17);
-				addOffset("singDOWN", 41, -45);
-		
+				addOffset("singUP", 1, 2);
+				addOffset("singRIGHT", 137, -20);
+				addOffset("singLEFT", 16, -22);
+				addOffset("singDOWN", 13, -51);
+				addOffset("intro", -4, 211);
 				playAnim('idle');
+			case 'miyno':
+                tex = Paths.getSparrowAtlas('Miyno', 'ridzak');
+                frames = tex;
+                animation.addByPrefix('idle', 'MiynoIdle', 24);
+                animation.addByPrefix('singUP', 'miynosingup', 24);
+                animation.addByPrefix('singRIGHT', 'miyno sing right', 24);
+                animation.addByPrefix('singDOWN', 'miynosingdown', 24);
+                animation.addByPrefix('singLEFT', 'miynosingleft', 24);
+    
+                addOffset('idle');
+                addOffset("singUP", 30, 0);
+                addOffset("singRIGHT", 40, 0);
+                addOffset("singLEFT", 46, 0);
+                addOffset("singDOWN", -160, 0);
+        
+                playAnim('idle');
+			case 'rian':
+                tex = Paths.getSparrowAtlas('Rian_FNF_Assets_', 'ridzak');
+                frames = tex;
+                animation.addByPrefix('idle', 'Rian IDLE', 24);
+                animation.addByPrefix('singUP', 'Rian UP', 24);
+                animation.addByPrefix('singLEFT', 'Rian RIGHT', 24);
+                animation.addByPrefix('singDOWN', 'Rian DOWN', 24);
+                animation.addByPrefix('singRIGHT', 'Rian LEFT', 24);
+                animation.addByPrefix('intro', 'Rian intro pose', 24, false);
+    
+                addOffset('idle', -150, 20);
+				addOffset('intro', -44, 80);
+                addOffset("singUP", -103, 65);
+                addOffset("singLEFT", -113, -30);
+                addOffset("singRIGHT", -170, -150);
+                addOffset("singDOWN", -130, -60);
+        
+                playAnim('idle');
+
+                flipX = true;
 		}
 
 		dance();
@@ -645,6 +683,16 @@ class Character extends FlxSprite
 				dance();
 				holdTimer = 0;
 			}
+			if (animation.curAnim.name == 'intro' && animation.frameIndex == 15 && !FuckYouImlazy) {
+				FlxG.sound.play(Paths.sound('whittyprobably', 'shared'), 1);
+				FlxG.sound.play(Paths.sound('544621__audio-dread__intense-scary-ambient-hiss', 'shared'), 1);
+				FuckYouImlazy = true;
+				
+			}
+			/*if (animation.curAnim.name == 'intro' && animation.frameIndex == 55 && !FuckYouImlazy2) {
+				
+				FuckYouImlazy2 = true;
+			}*/
 		}
 
 		switch (curCharacter)

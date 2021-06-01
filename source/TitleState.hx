@@ -44,6 +44,7 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
+	var devTeam:FlxSprite;
 	var bgcubes:FlxBackdrop;
 	var generated:Bool = false;
 
@@ -87,7 +88,7 @@ class TitleState extends MusicBeatState
 		trace('NEWGROUNDS LOL');
 		#end
 
-		FlxG.save.bind('funkin', 'ninjamuffin99');
+		FlxG.save.bind('funkin', 'ridzak');
 
 		KadeEngineData.initSave();
 
@@ -155,7 +156,7 @@ class TitleState extends MusicBeatState
 			FlxG.sound.music.fadeIn(4, 0, 0.7);
 		}
 
-		Conductor.changeBPM(102);
+		Conductor.changeBPM(90);
 		persistentUpdate = true;
 	
 		var realbg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('Blue1', 'ridzak'));
@@ -178,7 +179,7 @@ class TitleState extends MusicBeatState
 		add(realbg);
 		add(linesbg);
 		add(bgcubes);
-
+		
 		logoBl = new FlxSprite(-150, -100);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
 		logoBl.antialiasing = true;
@@ -230,7 +231,9 @@ class TitleState extends MusicBeatState
 
 		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		credGroup.add(blackScreen);
-
+		devTeam = new FlxSprite(0, 0).loadGraphic(Paths.image('Dev Team', 'ridzak'));
+		credGroup.add(devTeam);
+		devTeam.visible = false;
 		credTextShit = new Alphabet(0, 0, "ninjamuffin99\nPhantomArcade\nkawaisprite\nevilsk8er", true);
 		credTextShit.screenCenter();
 
@@ -245,6 +248,8 @@ class TitleState extends MusicBeatState
 		ngSpr.updateHitbox();
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = true;
+
+		
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -413,13 +418,15 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+				devTeam.visible = true;
+				createCoolText(['The', 'RidZak', 'Dev', 'Team']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
 			case 4:
+				devTeam.visible = false;
 				deleteCoolText();
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
@@ -477,7 +484,7 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			remove(ngSpr);
-
+			remove(devTeam);
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
 			skippedIntro = true;
