@@ -272,7 +272,7 @@ class FreeplayState extends MusicBeatState
 		{
 			iconArray[i].alpha = 0.6;
 		}
-
+		
 		iconArray[curSelected].alpha = 1;
 
 		for (item in grpSongs.members)
@@ -282,7 +282,7 @@ class FreeplayState extends MusicBeatState
 
 			item.alpha = 0.6;
 			// item.setGraphicSize(Std.int(item.width * 0.8));
-
+			
 			if (item.targetY == 0)
 			{
 				item.alpha = 1;
