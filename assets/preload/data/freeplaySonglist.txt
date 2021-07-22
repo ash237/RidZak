@@ -7,3 +7,4 @@ Genesis:cybbr:2
 Golden:cybbr:2
 Frenzy:rian:3
 Vast:miyno:3
+Eerie:eerie:4

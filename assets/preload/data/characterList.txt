@@ -21,3 +21,4 @@ cybbr-golden
 gf-cyb
 miyno
 rian
+eerie

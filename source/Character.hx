@@ -95,8 +95,19 @@ class Character extends FlxSprite
 				addOffset('scared', -2, -17);
 
 				playAnim('danceRight');
-
-
+			case 'gf-eer':
+				//this is really short cause it only has 2 animations, thank you miyno!
+				tex = Paths.getSparrowAtlas('eerie/GF_ass_sets', 'ridzak');
+				frames = tex;
+				animation.addByIndices('sad', 'gf sad', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+	
+				addOffset('sad', -2, -2);
+				addOffset('danceLeft', 0, -9);
+				addOffset('danceRight', 0, -9);
+	
+				playAnim('danceRight');
 			case 'gf-christmas':
 				tex = Paths.getSparrowAtlas('christmas/gfChristmas');
 				frames = tex;
@@ -638,6 +649,24 @@ class Character extends FlxSprite
                 playAnim('idle');
 
                 flipX = true;
+			case 'eerie':
+				tex = Paths.getSparrowAtlas('eerie/Eerie', 'ridzak');
+				frames = tex;
+				animation.addByPrefix('idle', "Eidle", 24, true);
+				//we're looping this cause:
+				//1: it looks way better
+				//2: it fixes the thing where it doesnt play the idle anim when the camera is pointed at him
+				animation.addByPrefix('singUP', 'ESingup', 24, false);
+				animation.addByPrefix('singDOWN', 'EsingDown', 24, false);
+				animation.addByPrefix('singLEFT', 'EsingLeft', 24, false);
+				animation.addByPrefix('singRIGHT', 'EsingRight', 24, false);
+				addOffset('idle');
+				addOffset("singUP", -59, 7);
+				addOffset("singRIGHT", -10, -2);
+				addOffset("singLEFT", 32, -23);
+				addOffset("singDOWN", -30, -100);
+	
+				playAnim('idle');
 		}
 
 		dance();
@@ -732,6 +761,17 @@ class Character extends FlxSprite
 					{
 						danced = !danced;
 
+						if (danced)
+							playAnim('danceRight');
+						else
+							playAnim('danceLeft');
+					}
+
+				case 'gf-eer':
+					if (!animation.curAnim.name.startsWith('hair'))
+					{
+						danced = !danced;
+	
 						if (danced)
 							playAnim('danceRight');
 						else

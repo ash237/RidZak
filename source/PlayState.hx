@@ -191,6 +191,9 @@ class PlayState extends MusicBeatState
 
 	public static var timeCurrently:Float = 0;
 	public static var timeCurrentlyR:Float = 0;
+
+	//adding this here so the effect i want actually works (sorry ash you're probably getting eye cancer watching my code)
+	var piano:FlxSprite = new FlxSprite(-702, -687.75).loadGraphic(Paths.image('eerie/PianoByitSelf', 'ridzak'));
 	
 	// Will fire once to prevent debug spam messages and broken animations
 	private var triggeredAlready:Bool = false;
@@ -674,14 +677,19 @@ class PlayState extends MusicBeatState
 			case 'vibe' | 'vast':
 			{
 				curStage = 'vibe';
+				//i was gonna change the zoom but holy shit the bg is THAT small
+
 				var bg:FlxSprite = new FlxSprite(-140, 0).loadGraphic(Paths.image('vibeStage/back back', 'ridzak'));
 				var bg2:FlxSprite = new FlxSprite(-140, 0).loadGraphic(Paths.image('vibeStage/back', 'ridzak'));
 				var bg4:FlxSprite = new FlxSprite(-140, 0).loadGraphic(Paths.image('vibeStage/Front', 'ridzak'));
+
 				bg.antialiasing = true;
 				bg2.antialiasing = true;
 				bg4.antialiasing = true;
+
 				bg.scrollFactor.set(0.5, 0.5);
 				bg2.scrollFactor.set(0.8, 0.8);
+
 				add(bg);
 				add(bg2);
 				add(bg4);
@@ -716,6 +724,22 @@ class PlayState extends MusicBeatState
 				}
 				
 			}
+			case 'eerie':
+			{
+				defaultCamZoom = 0.8;
+				curStage = 'eerieStage';
+
+				var back:FlxSprite = new FlxSprite(-154.35, -161).loadGraphic(Paths.image('eerie/Back', 'ridzak'));
+				back.scrollFactor.set(0.8, 0.8);
+				add(back);
+
+				var crowd:FlxSprite = new FlxSprite(-154.25, -161).loadGraphic(Paths.image('eerie/Crowd', 'ridzak'));
+				crowd.scrollFactor.set(0.9, 0.9);
+				add(crowd);
+
+				piano.scrollFactor.set(0.8, 0.8);
+				//dont think there's much here to add?
+			}	
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -758,6 +782,8 @@ class PlayState extends MusicBeatState
 				gfVersion = 'gf-pixel';
 			case 'cyb':
 				gfVersion = 'gf-cyb';
+			case 'eerieStage':
+				gfVersion = 'gf-eer';
 		}
 
 		if (curStage == 'limo')
@@ -823,8 +849,6 @@ class PlayState extends MusicBeatState
                 camPos.x = 574.38;
                 dad.scale.set(1.4, 1.4);
 		}
-
-
 		
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
 
@@ -881,6 +905,16 @@ class PlayState extends MusicBeatState
 				add(boyfriend);
 				add(dad);
 				bgTEST = true;
+			case 'eerieStage':
+				//note to self: always break down the characters in adobe before grabbing the x and y axis
+				//-santi
+
+				dad.x = 62.25;
+				dad.y = 70.55;
+				gf.x = 469.75;
+				gf.y = -38.6;
+				boyfriend.x = 835.45;
+				boyfriend.y = 373.7;
 		}
 
 		add(gf);
@@ -908,6 +942,9 @@ class PlayState extends MusicBeatState
 					cybLights.add(light);
 				}
 		}
+		//once again with my shitty layering
+		if (curStage == 'eerieStage')
+			add(piano);
 		doof = new DialogueBox(false, dialogue);
 		// doof.x += 70;
 		// doof.y = FlxG.height * 0.5;
