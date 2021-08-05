@@ -194,6 +194,7 @@ class PlayState extends MusicBeatState
 
 	//adding this here so the effect i want actually works (sorry ash you're probably getting eye cancer watching my code)
 	var piano:FlxSprite = new FlxSprite(-702, -687.75).loadGraphic(Paths.image('eerie/PianoByitSelf', 'ridzak'));
+	var fuckyou:FlxSprite = new FlxSprite().loadGraphic(Paths.image('eerie/fuckyou', 'ridzak'));
 	
 	// Will fire once to prevent debug spam messages and broken animations
 	private var triggeredAlready:Bool = false;
@@ -738,6 +739,7 @@ class PlayState extends MusicBeatState
 				add(crowd);
 
 				piano.scrollFactor.set(0.8, 0.8);
+				fuckyou.scrollFactor.set(0, 0);
 				//dont think there's much here to add?
 			}	
 			default:
@@ -945,6 +947,7 @@ class PlayState extends MusicBeatState
 		//once again with my shitty layering
 		if (curStage == 'eerieStage')
 			add(piano);
+		    add(fuckyou);
 		doof = new DialogueBox(false, dialogue);
 		// doof.x += 70;
 		// doof.y = FlxG.height * 0.5;
